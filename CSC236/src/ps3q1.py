@@ -43,7 +43,7 @@ def step(n: str, pn_name: str) -> str:
 def SI(p, base, step) -> str:
     """
     SI() is a tenary function
-    Takes in p, base, step; returns a proof by Well-Ordering Principle that p is True.
+    Takes in p, base, step; returns a proof by Simple Induction to show p is true.
     """
     return "Base Case: " + base + "\nInductive Step: Let n ∈ N. Assume (IH) " + p("n") + ".\n" + step("n", "IH")
 
@@ -51,6 +51,7 @@ def SI(p, base, step) -> str:
 def WOP(p, base, step) -> str:
     """
     WOP() is a tenary function
+    Takes in p, base, step; returns a proof by Well-Ordering Principle that p is True.
     Similar reasoning and implementation to SI.
     """
     s = \
