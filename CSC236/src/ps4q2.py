@@ -30,7 +30,7 @@ def Pow2(x, y):
     return r(x, y, 1)
 
 
-# Precondition: x ∈ R, y ∈ N, z ∈ R
+# Precondition: xi ∈ R, yi ∈ N, zi ∈ R.
 # Postcondition: return (xi ** yi) * zi (return zi if y = 0).
 def r(xi, yi, zi):
         if yi <= 0:
