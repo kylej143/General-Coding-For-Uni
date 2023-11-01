@@ -4,7 +4,7 @@ import math
 
 
 def Pow1(x, y):
-    # Precondition: TODO
+    # Precondition: y ∈ N, x ** y = (xi ** yi) * zi 
     # Postcondition: return x ** y (return 1 if x = y = 0).
     def r(xi, yi, zi):
         if yi <= 0:
@@ -30,8 +30,8 @@ def Pow2(x, y):
     return r(x, y, 1)
 
 
-# Precondition: TODO
-# Postcondition: TODO
+# Precondition: x ∈ R, y ∈ N, z ∈ R
+# Postcondition: return (xi ** yi) * zi (return zi if y = 0).
 def r(xi, yi, zi):
         if yi <= 0:
             return zi
