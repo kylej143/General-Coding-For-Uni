@@ -1,8 +1,5 @@
 # Precondition: x ∈ R, y ∈ N.
 # Postcondition: return x ** y (return 1 if x = y = 0).
-import math
-
-
 def Pow1(x, y):
     # Precondition: y ∈ N, x ** y = (xi ** yi) * zi 
     # Postcondition: return x ** y (return 1 if x = y = 0).
