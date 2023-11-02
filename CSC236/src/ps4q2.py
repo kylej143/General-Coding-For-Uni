@@ -30,7 +30,7 @@ def Pow2(x, y):
 # Precondition: xi ∈ R, yi ∈ N, zi ∈ R.
 # Postcondition: return (xi ** yi) * zi (return zi if y = 0).
 def r(xi, yi, zi):
-        if yi <= 0:
+        if yi <= 0:  # here we can also say yi == 0, as yi ∈ N
             return zi
         else:
             if yi % 2 == 1:
@@ -39,11 +39,18 @@ def r(xi, yi, zi):
                 return r(xi * xi, yi // 2, zi)
 
 
-def don_test_Pow2() -> None:
+def test_Pow2() -> None:
     assert 5.123 ** 3 == Pow2(5.123, 3)
     assert 0 ** 0 == Pow2(0,0)
     assert (-2) ** 15 == Pow2(-2,15)
     assert (-2) ** 10 == Pow2(-2,10)
+
+
+def test_r() -> None:
+    assert 5.123 ** 3 * 5 == r(5.123, 3, 5)
+    assert 0 ** 0 * 4 == r(0,0, 4)
+    assert (-2) ** 15 * 0.3 == r(-2,15, 0.3)
+    assert (-2) ** 10 * -5 == r(-2,10, -5)
 
 
 # Precondition: x ∈ R, y ∈ N.
