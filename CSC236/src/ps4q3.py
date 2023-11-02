@@ -25,7 +25,7 @@ def test_IsIn() -> None:
 # A is a 2D array with each row and each column sorted.
 # Postcondition: returns True if A contains v; False otherwise
 def IsInBinary(v, A):
-    # Precondition: [r0,r1][c0,c1] should be a valid index contained in A.
+    # Precondition: [r0:r1][c0:c1] should be a valid index contained in A.
     # Postcondition: returns True if A[r0:r1][c0:c1] contains v; False otherwise.
     def Helper(r0, r1, c0, c1):
         # Base Case:
